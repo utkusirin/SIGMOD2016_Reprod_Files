@@ -3,8 +3,8 @@ Readme for reproducibility submission of paper ID 375, titled "Micro-architectur
 
 A) Source code info
 
-Repository: https://github.com/utkusirin/SIGMOD2016_Reprod_Files.git
-			
+Repository: https://github.com/utkusirin/SIGMOD2016_Reprod_Files/archive/master.zip
+
 Programming Language: C++ and Java.
 
 Compiler Info:
@@ -25,7 +25,7 @@ OS Info:
 Linux: Red Hat Enterprise Linux Server release 6.8 (Santiago), with Linux kernel version 2.6.32-642.4.2.el6.x86_64.
 Windows: Windows 7 Enterprise.
 
-Packages/Libraries Needed: 
+Packages/Libraries Needed:
 
 The Linux environment needs to have Intel Vtune version 2015 to be installed. Note that VTune 2016 and 2017 produces an error in our experiments.
 
@@ -40,18 +40,18 @@ C) Hardware Info
 C1) Processor: Intel(R) Xeon(R) CPU E5-2640 v2 (Ivy Bridge) with two sockets and eight cores per socket, operating at 2GHz. HyperThreading is disabled, TurboBoost is enabled.
 C2) Caches: Three levels of caches. L1 is seperated for instruction and data, i.e., L1I and L1D, each with 32KB of size. L2 is unified for instruction and data with 256KB of size. L3 is unified for instruction and data with 20MB of size. L1I, L1D and L2 are per core, whereas L3 is per socket, i.e., shared among all the cores on the same socket.
 C3) Memory: 1600MHz, 256GB
-C4) Secondary Storage: 250GB of disk space is needed. 
+C4) Secondary Storage: 250GB of disk space is needed.
 
 D) Experimentation Info
 
-All the experiments are conducted in the Linux environments. Then, experimental results are transferred to the Windows environment to reproduce the graphs in the provided MS Office Excel spreadsheets. 
+All the experiments are conducted in the Linux environments. Then, experimental results are transferred to the Windows environment to reproduce the graphs in the provided MS Office Excel spreadsheets.
 
-Throughout this section "main" folder represents the folder whose link is below, and "/path_to_main/" represents the absolute path to the main folder. 
+Throughout this section "main" folder represents the folder whose link is below, and "/path_to_main/" represents the absolute path to the main folder.
 
 D1) Download the main folder, and extract it:
 
-$ wget https://www.dropbox.com/s/j8qxjl4hibx0x5e/Sirin_SIGMOD16_Reprod.zip
-$ unzip Sirin_SIGMOD16_Reprod.zip
+$ https://github.com/utkusirin/SIGMOD2016_Reprod_Files/archive/master.zip
+$ unzip master.zip
 
 D2) PATH configurations: The Linux system needs to have VTune and VoltDB on the system PATH. For that, add the following lines to the ~/.bashrc:
 
@@ -68,7 +68,7 @@ fi
 
 To activate the configured ~/.bashrc, log out and log in back to the system.
 
-D3) Permissions: The Linux system needs certain permissions to run VTune. Normally, the ~/.bashrc configurations explained in Section D1 should already grant the required permission for VTune. However, this permission grant fails in certain cases. For that, run the following steps 
+D3) Permissions: The Linux system needs certain permissions to run VTune. Normally, the ~/.bashrc configurations explained in Section D1 should already grant the required permission for VTune. However, this permission grant fails in certain cases. For that, run the following steps
 
 sudo su
 echo 0 > /proc/sys/kernel/kptr_restrict
@@ -85,9 +85,9 @@ $ amplxe-gui &
 
 Then, follow the steps below:
 
-D4.1) Open the VTune project under the submission folder: mbench-analysis.amplxeproj. To do that, click on "Open Project" in VTune GUI (see VTune_Helper/Figure1). 
+D4.1) Open the VTune project under the submission folder: mbench-analysis.amplxeproj. To do that, click on "Open Project" in VTune GUI (see VTune_Helper/Figure1).
 
-D4.2) Click on "New Analysis" in VTune GUI (see VTune_Helper/Figure2). This will open a new sub-window inside VTune GUI (see VTune_Helper/Figure3).  
+D4.2) Click on "New Analysis" in VTune GUI (see VTune_Helper/Figure2). This will open a new sub-window inside VTune GUI (see VTune_Helper/Figure3).
 
 D4.3) In the new sub-window, right-click on "Custom Analysis", and click on "New Hardware Event-based Sampling Analysis" (see VTune_Helper/Figure4).
 
@@ -150,25 +150,24 @@ $ scp username@server:/path_to_main/main/spreadsheets.zip .
 This transfers the spreadsheets.zip file to the Windows environment. Then, unzip the spreadsheets.zip folder, and open the spreadsheets folder in the Windows environment using related GUIs.
 
 We can now reproduce the figures. For every spreadsheet follow the steps below:
-	D7.1) Open the 1st sheet, and click on the "Import VTune Data" and "Import Thpt Data" buttons.
-	D7.2) Repeat step D7.1 for all the sheets except the last sheet (the "all results" sheet)
-	D7.3) Open the "all results" sheet, and figures are ready to compare with the published figures. Figure numbers are the titles of every figure.
+    D7.1) Open the 1st sheet, and click on the "Import VTune Data" and "Import Thpt Data" buttons.
+    D7.2) Repeat step D7.1 for all the sheets except the last sheet (the "all results" sheet)
+    D7.3) Open the "all results" sheet, and figures are ready to compare with the published figures. Figure numbers are the titles of every figure.
 
-Note that the modules_breakdown.xlsm spreadsheet has only a single sheet. Simply use the "Import Brkdwn Data" button to load the performance counter numbers and reproduce the related figure. 
+Note that the modules_breakdown.xlsm spreadsheet has only a single sheet. Simply use the "Import Brkdwn Data" button to load the performance counter numbers and reproduce the related figure.
 
 ================================================================================
 
-Dear Reproducibility Committee, 
+Dear Reproducibility Committee,
 
-Please find attached the following information with regards to my reproducibility submission: 
+Please find attached the following information with regards to my reproducibility submission:
 
-Paper ID: 375 
+Paper ID: 375
 Paper Title: Micro-architectural Analysis of In-memory OLTP
 Corresponding Author Name: Utku Sirin
-Corresponding Author Email: utku.sirin@epfl.ch 
-Url with the source code: https://www.dropbox.com/s/j8qxjl4hibx0x5e/Sirin_SIGMOD16_Reprod.zip
-Url of the readme: https://www.dropbox.com/s/s8kl647ckbl73iw/readme.txt
-Url of the master script: https://www.dropbox.com/s/vuydfy586phcr7c/master.sh
+Corresponding Author Email: utku.sirin@epfl.ch
+Url with the source code: https://github.com/utkusirin/SIGMOD2016_Reprod_Files/archive/master.zip
+Url of the readme: https://github.com/utkusirin/SIGMOD2016_Reprod_Files/blob/master/README.md
 
-Best, 
+Best,
 Authors of Paper #375, SIGMOD 2016
