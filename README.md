@@ -51,6 +51,7 @@ Throughout this section "main" folder represents the folder whose link is below,
 D1) Download the main folder, and extract it:
 
 $ https://github.com/utkusirin/SIGMOD2016_Reprod_Files/archive/master.zip
+
 $ unzip master.zip
 
 D2) PATH configurations: The Linux system needs to have VTune and VoltDB on the system PATH. For that, add the following lines to the ~/.bashrc:
