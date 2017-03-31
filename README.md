@@ -164,10 +164,15 @@ Dear Reproducibility Committee,
 Please find attached the following information with regards to my reproducibility submission:
 
 Paper ID: 375
+
 Paper Title: Micro-architectural Analysis of In-memory OLTP
+
 Corresponding Author Name: Utku Sirin
+
 Corresponding Author Email: utku.sirin@epfl.ch
+
 Url with the source code: https://github.com/utkusirin/SIGMOD2016_Reprod_Files/archive/master.zip
+
 Url of the readme: https://github.com/utkusirin/SIGMOD2016_Reprod_Files/blob/master/README.md
 
 Best,
