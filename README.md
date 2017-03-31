@@ -3,7 +3,7 @@ Readme for reproducibility submission of paper ID 375, titled "Micro-architectur
 
 A) Source code info
 
-Repository: https://www.dropbox.com/sh/5kmgtgw3uy8bejs/AABxQfkyJ-31coStqYh2DjRKa
+Repository: https://github.com/utkusirin/SIGMOD2016_Reprod_Files.git
 			
 Programming Language: C++ and Java.
 
